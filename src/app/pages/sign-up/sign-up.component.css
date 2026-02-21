@@ -1,0 +1,28 @@
+@layer base {
+    body {
+        @apply bg-ivory text-charcoal antialiased selection:bg-gold-glow/20;
+    }
+}
+
+.glass-effect {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.bg-subtle-gradient {
+    background: radial-gradient(circle at 0% 0%, #fdfcf8 0%, #f5f2ea 100%);
+}
+
+.btn-premium {
+    @apply bg-charcoal text-ivory transition-all duration-500 ease-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-premium:hover {
+    @apply shadow-[0_0_25px_rgba(212, 175, 55, 0.3)] border-gold-glow/30;
+    background-color: #262a2d;
+    color: #D4AF37;
+}

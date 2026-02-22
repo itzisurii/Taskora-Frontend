@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main-page3',
@@ -7,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrl: './main-page3.component.css'
 })
 export class MainPage3Component {
+  constructor(private router: Router){}
 
+  goToTask(target: 'dashboard' | 'mainPage2'){
+    const routes = {
+      dashboard: 'dashboard',
+      mainPage2: 'mainPage2'
+    }
+    this.router.navigate([routes[target]])
+  }
 }

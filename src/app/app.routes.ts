@@ -5,6 +5,7 @@ import { SignUpComponent } from './pages/sign-up/sign-up.component';
 import { MainPageComponent } from './pages/main-page/main-page.component';
 import { MainPage2Component } from './pages/main-page2/main-page2.component';
 import { MainPage3Component } from './pages/main-page3/main-page3.component';
+import { NewTaskComponent } from './components/new-task/new-task.component';
 
 export const routes: Routes = [
     {
@@ -34,5 +35,9 @@ export const routes: Routes = [
     {
         path: 'mainPage3',
         component: MainPage3Component
+    },
+    {
+        path: 'newTask',
+        component: NewTaskComponent
     }
 ];

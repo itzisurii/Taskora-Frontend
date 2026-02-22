@@ -37,7 +37,7 @@
                                 <input
                                     class="flex-1 border-none focus:ring-0 text-xl font-serif-refined px-6 py-4 placeholder:text-slate-300 text-primary"
                                     placeholder="What is your primary objective?" type="text" />
-                                <button
+                                <button (click)="goToTask('dashboard')"
                                     class="bg-primary text-white px-10 py-4 text-[11px] uppercase tracking-[0.2em] font-bold transition-all gold-button-glow hover:bg-[#1f473e] active:scale-[0.98]">
                                     Create
                                 </button>
@@ -100,7 +100,7 @@
     </main>
     <footer class="py-12 px-12">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <button
+            <button (click)="goToTask('mainPage2')"
                 class="text-[11px] uppercase tracking-widest text-slate-400 hover:text-primary transition-colors flex items-center gap-2">
                 <span class="material-symbols-outlined !text-sm">arrow_back</span>
                 Back

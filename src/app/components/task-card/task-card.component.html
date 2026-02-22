@@ -1,0 +1,33 @@
+<div class="group bg-white px-8 py-8 luxury-shadow card-hover flex justify-between">
+    <div class="flex gap-8">
+        <div class="mt-1 flex-shrink-0">
+            <div
+                class="h-5 w-5 rounded-full border border-slate-300 dark:border-slate-700 flex items-center justify-center cursor-pointer hover:border-primary transition-colors">
+            </div>
+        </div>
+
+        <div>
+            <h3 class="text-xl font-medium text-slate-900 dark:text-white font-serif-refined tracking-wide">
+                {{ task.title }}
+            </h3>
+            <p class="mt-2 text-[13px] leading-relaxed font-light text-slate-500 dark:text-slate-400 max-w-2xl">
+                {{ task.description }}
+            </p>
+
+            <div class="mt-6 flex flex-wrap gap-6">
+                <span class="flex items-center gap-2 text-[10px] uppercase tracking-[0.1em] font-semibold text-accent">
+                    <span class="material-symbols-outlined !text-base">calendar_today</span>
+                    {{ task.due }}
+                </span>
+                <span class="flex items-center gap-2 text-[10px] uppercase tracking-[0.1em] font-medium text-slate-400">
+                    {{ task.tag }}
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="opacity-0 group-hover:opacity-100 transition flex gap-6">
+        <span class="material-symbols-outlined icon-btn">edit_note</span>
+        <span class="material-symbols-outlined icon-btn text-red-700">delete_outline</span>
+    </div>
+</div>

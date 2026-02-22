@@ -1,4 +1,4 @@
-<body class="min-h-screen flex flex-col antialiased">
+<div class="min-h-screen flex flex-col antialiased">
     <div class="fixed inset-0 pointer-events-none overflow-hidden opacity-30">
         <div
             class="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] rounded-full bg-[var(--champagne-light)] blur-[120px]">
@@ -8,14 +8,12 @@
         </div>
     </div>
     <header class="relative w-full px-8 lg:px-20 py-8 flex items-center justify-between z-10">
-        <div class="flex items-center gap-3">
-            <div class="size-6 text-primary">
-                <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M24 4L44 24L24 44L4 24L24 4Z" stroke="currentColor" stroke-width="2"></path>
-                    <path d="M16 24H32" stroke="currentColor" stroke-width="2"></path>
-                </svg>
+        <div class="flex items-center gap-4">
+            <div class="flex h-7 w-7 items-center justify-center border border-primary/20 rounded-full">
+                <span class="material-symbols-outlined !text-lg text-primary">circle_notifications</span>
             </div>
-            <h2 class="text-2xl font-medium tracking-widest uppercase text-primary">Taskora</h2>
+            <h1 class="text-lg font-medium tracking-[0.2em] uppercase text-primary dark:text-accent font-serif-refined">
+                Taskora</h1>
         </div>
         <div class="hidden md:flex items-center gap-10">
             <a class="text-[10px] tracking-[0.2em] uppercase font-semibold hover:text-accent transition-colors"
@@ -35,7 +33,7 @@
                 <p class="text-[11px] uppercase tracking-[0.3em] text-slate-500 font-medium">The Art of Organized Living
                 </p>
             </div>
-            <form action="#" class="space-y-8">
+            <form class="space-y-8">
                 <div class="flex flex-col gap-2">
                     <label class="text-[10px] uppercase tracking-[0.2em] font-bold text-primary/60" for="email">Email
                         Address</label>
@@ -62,9 +60,8 @@
                     </div>
                 </div>
                 <div class="pt-4">
-                    <button
-                        class="w-full py-4 bg-primary text-white text-[11px] uppercase tracking-[0.4em] font-bold hover:bg-[var(--accent)] transition-all duration-500 shadow-xl shadow-black/5"
-                        type="submit">
+                    <button (click)="goToTask('dashboard')"
+                        class="w-full py-4 bg-primary text-white text-[11px] uppercase tracking-[0.4em] font-bold hover:bg-[var(--accent)] transition-all duration-500 shadow-xl shadow-black/5">
                         Enter Dashboard
                     </button>
                 </div>
@@ -97,7 +94,7 @@
                 <p class="text-[11px] text-slate-500 tracking-wide">
                     New to the collection?
                     <a class="text-accent font-bold hover:text-primary transition-colors underline underline-offset-4 ml-1"
-                        href="#">Create Account</a>
+                        routerLink="/signUp">Create Account</a>
                 </p>
             </div>
         </div>
@@ -105,7 +102,7 @@
     <footer class="relative w-full py-10 px-8 text-center z-10">
         <div
             class="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-12 text-[10px] uppercase tracking-[0.2em] text-slate-400 font-medium">
-            <p>© 2024 Taskora Archive</p>
+            <p>© 2026 Taskora Archive</p>
             <div class="flex gap-8">
                 <a class="hover:text-accent transition-colors" href="#">Privacy</a>
                 <a class="hover:text-accent transition-colors" href="#">Terms</a>
@@ -114,4 +111,4 @@
         </div>
     </footer>
 
-</body>
+</div>

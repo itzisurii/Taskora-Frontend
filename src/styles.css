@@ -1,3 +1,66 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "tailwindcss";
+
+:root {
+    --primary: #1a3c34;
+    --accent: #b89a67;
+    --bg-warm: #f8f7f5;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-warm);
+}
+
+.font-serif-refined {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+}
+
+.luxury-shadow {
+    box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.04);
+}
+
+.card-hover:hover {
+    box-shadow: 0 20px 50px -12px rgba(26, 60, 52, 0.08);
+    transform: translateY(-1px);
+}
+
+
+:root {
+    --charcoal: #2C2C2C;
+    --champagne: #D4AF37;
+    --champagne-light: #F4EBD0;
+    --ivory: #FBFAF5;
+    --glass-bg: rgba(255, 255, 255, 0.7);
+}
+
+@layer base {
+    body {
+        @apply bg-[var(--ivory)] text-[var(--charcoal)];
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    h1,
+    h2,
+    .serif-font {
+        font-family: 'Playfair Display', serif;
+    }
+}
+
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.03);
+}
+
+.radial-wash {
+    background: radial-gradient(circle at center, var(--champagne-light) 0%, transparent 70%);
+    opacity: 0.15;
+}

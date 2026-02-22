@@ -50,13 +50,13 @@
                             </select>
                         </div>
                         <div class="pt-6">
-                            <button
+                            <button (click)="goToTask('mainPage3')"
                                 class="w-full bg-primary py-5 text-[11px] uppercase tracking-[0.25em] font-bold text-white transition-all hover:bg-opacity-95 hover:shadow-2xl hover:shadow-primary/20 flex items-center justify-center gap-2 group">
                                 Continue to Workspace
                                 <span
                                     class="material-symbols-outlined !text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
                             </button>
-                            <p
+                            <p (click)="goToTask('dashboard')"
                                 class="mt-6 text-center text-[10px] text-slate-400 tracking-widest uppercase font-medium cursor-pointer hover:text-accent transition-colors">
                                 I'll set this up later
                             </p>

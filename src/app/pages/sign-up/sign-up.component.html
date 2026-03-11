@@ -1,0 +1,121 @@
+<body class="min-h-screen flex flex-col antialiased selection:bg-accent/20">
+    <div class="fixed inset-0 pointer-events-none overflow-hidden">
+        <div class="absolute inset-0 radial-wash"></div>
+        <div
+            class="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] rounded-full bg-[var(--champagne-light)] blur-[120px] opacity-20">
+        </div>
+        <div
+            class="absolute -bottom-[10%] -right-[10%] w-[30%] h-[30%] rounded-full bg-[var(--champagne-light)] blur-[100px] opacity-20">
+        </div>
+    </div>
+    <header class="relative w-full px-8 lg:px-20 py-8 flex items-center justify-between z-10">
+        <div class="flex items-center gap-4">
+            <div class="flex h-7 w-7 items-center justify-center border border-primary/20 rounded-full">
+                <span class="material-symbols-outlined !text-lg text-primary">circle_notifications</span>
+            </div>
+            <h1 class="text-lg font-medium tracking-[0.2em] uppercase text-primary dark:text-accent font-serif-refined">
+                Taskora</h1>
+        </div>
+        <div class="hidden md:flex items-center gap-10">
+            <a class="text-[10px] tracking-[0.2em] uppercase font-semibold hover:text-accent transition-colors"
+                href="#">Collection</a>
+            <a class="text-[10px] tracking-[0.2em] uppercase font-semibold hover:text-accent transition-colors"
+                href="#">Story</a>
+            <a class="border border-primary px-8 py-2.5 text-[10px] tracking-[0.2em] uppercase font-bold hover:bg-primary hover:text-white transition-all duration-300"
+                href="#">
+                Sign In
+            </a>
+        </div>
+    </header>
+    <main class="relative flex-1 flex items-center justify-center p-6 z-10">
+        <div class="w-full max-w-[520px] glass-card p-12 lg:p-20">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl md:text-5xl font-light text-primary mb-5 italic serif-font">Create Account</h1>
+                <p class="text-[10px] uppercase tracking-[0.4em] text-slate-400 font-bold">Begin Your Organized Journey
+                </p>
+            </div>
+            <form action="#" class="space-y-10">
+                <div class="flex flex-col gap-2">
+                    <label class="text-[9px] uppercase tracking-[0.3em] font-bold text-primary/40" for="fullname">Full
+                        Name</label>
+                    <input
+                        class="w-full bg-transparent border-0 border-b border-slate-200 px-0 py-3 focus:ring-0 focus:border-accent transition-colors placeholder:text-slate-200 text-sm font-light tracking-widest"
+                        id="fullname" placeholder="FIRST AND LAST NAME" type="text" />
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label class="text-[9px] uppercase tracking-[0.3em] font-bold text-primary/40" for="email">Email
+                        Address</label>
+                    <input
+                        class="w-full bg-transparent border-0 border-b border-slate-200 px-0 py-3 focus:ring-0 focus:border-accent transition-colors placeholder:text-slate-200 text-sm font-light tracking-widest"
+                        id="email" placeholder="EMAIL@DOMAIN.COM" type="email" />
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label class="text-[9px] uppercase tracking-[0.3em] font-bold text-primary/40" for="password">Choose
+                        Password</label>
+                    <div class="relative flex items-center">
+                        <input
+                            class="w-full bg-transparent border-0 border-b border-slate-200 px-0 py-3 pr-10 focus:ring-0 focus:border-accent transition-colors placeholder:text-slate-200 text-sm font-light tracking-widest"
+                            id="password" placeholder="MINIMUM 8 CHARACTERS" type="password" />
+                        <button class="absolute right-0 text-slate-300 hover:text-accent transition-colors"
+                            type="button">
+                            <span class="material-symbols-outlined text-[18px]">lock_open</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="pt-6">
+                    <button (click)="goToTask('mainPage1')"
+                        class="w-full py-5 bg-primary text-white text-[11px] uppercase tracking-[0.5em] font-bold hover:bg-[var(--accent)] transition-all duration-700 shadow-2xl shadow-black/10"
+                        type="submit">
+                        Start Your Story
+                    </button>
+                </div>
+                <div class="relative py-6">
+                    <div class="absolute inset-0 flex items-center">
+                        <div class="w-full border-t border-slate-100"></div>
+                    </div>
+                    <div class="relative flex justify-center text-[9px] uppercase tracking-[0.4em]">
+                        <span class="bg-white/80 px-6 text-slate-400 font-medium">Alternative Access</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <button
+                        class="flex items-center justify-center gap-3 py-4 border border-slate-100 bg-white/40 hover:border-accent hover:bg-white transition-all group"
+                        type="button">
+                        <img alt=""
+                            class="w-3.5 h-3.5 grayscale group-hover:grayscale-0 opacity-50 group-hover:opacity-100 transition-all"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjkrrR-IuCqtKgJvGfkzpYJpvYBkdOm5CrWNR4TxoN8Pcn6t9gvselpkid5XL8LY3w8JXH7b8G1KQWeJ8Ea2_2LWJxsC1AVKataat4G9-Lm0f6-Dc-ab-2pn3QWR4K4HQHAXxN5_f_K5n02l0UEGERRK1n8Zp2gtV14DOgxmon4xucgqRDj6z-SizmiZdRvP33j5jvIENa2vMeI_CqhwA51H_AihY3dRUXmBHRj5y5LF4mB6nhxcqvwN_4vEgl76B1AzIx2dBbugk" />
+                        <span
+                            class="text-[9px] uppercase tracking-[0.2em] font-bold text-slate-500 group-hover:text-primary">Google</span>
+                    </button>
+                    <button
+                        class="flex items-center justify-center gap-3 py-4 border border-slate-100 bg-white/40 hover:border-accent hover:bg-white transition-all group"
+                        type="button">
+                        <span
+                            class="material-symbols-outlined text-[18px] text-slate-300 group-hover:text-primary transition-colors">account_circle</span>
+                        <span
+                            class="text-[9px] uppercase tracking-[0.2em] font-bold text-slate-500 group-hover:text-primary">GitHub</span>
+                    </button>
+                </div>
+            </form>
+            <div class="mt-16 text-center pt-10 border-t border-slate-50">
+                <p class="text-[10px] text-slate-400 tracking-[0.1em] font-medium uppercase">
+                    Already part of the collection?
+                    <a class="text-accent font-bold hover:text-primary transition-colors underline underline-offset-8 decoration-1 ml-2"
+                        href="#">Sign In</a>
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer class="relative w-full py-12 px-8 text-center z-10">
+        <div
+            class="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-16 text-[9px] uppercase tracking-[0.3em] text-slate-400 font-semibold">
+            <p>© 2024 Taskora Archive</p>
+            <div class="flex gap-10">
+                <a class="hover:text-accent transition-colors" href="#">Privacy Portfolio</a>
+                <a class="hover:text-accent transition-colors" href="#">Legal Terms</a>
+                <a class="hover:text-accent transition-colors" href="#">Inquiry</a>
+            </div>
+        </div>
+    </footer>
+
+</body>

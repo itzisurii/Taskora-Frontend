@@ -1,0 +1,28 @@
+:root {
+    --charcoal: #2C2C2C;
+    --champagne: #D4AF37;
+    --champagne-light: #F4EBD0;
+    --ivory: #FBFAF5;
+    --glass-bg: rgba(255, 255, 255, 0.7);
+}
+
+@layer base {
+    body {
+        @apply bg-[var(--ivory)] text-[var(--charcoal)];
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    h1,
+    h2,
+    .serif-font {
+        font-family: 'Playfair Display', serif;
+    }
+}
+
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.05);
+}

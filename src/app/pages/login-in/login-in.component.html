@@ -1,0 +1,114 @@
+<div class="min-h-screen flex flex-col antialiased">
+    <div class="fixed inset-0 pointer-events-none overflow-hidden opacity-30">
+        <div
+            class="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] rounded-full bg-[var(--champagne-light)] blur-[120px]">
+        </div>
+        <div
+            class="absolute -bottom-[10%] -right-[10%] w-[30%] h-[30%] rounded-full bg-[var(--champagne-light)] blur-[100px]">
+        </div>
+    </div>
+    <header class="relative w-full px-8 lg:px-20 py-8 flex items-center justify-between z-10">
+        <div class="flex items-center gap-4">
+            <div class="flex h-7 w-7 items-center justify-center border border-primary/20 rounded-full">
+                <span class="material-symbols-outlined !text-lg text-primary">circle_notifications</span>
+            </div>
+            <h1 class="text-lg font-medium tracking-[0.2em] uppercase text-primary dark:text-accent font-serif-refined">
+                Taskora</h1>
+        </div>
+        <div class="hidden md:flex items-center gap-10">
+            <a class="text-[10px] tracking-[0.2em] uppercase font-semibold hover:text-accent transition-colors"
+                href="#">Collection</a>
+            <a class="text-[10px] tracking-[0.2em] uppercase font-semibold hover:text-accent transition-colors"
+                href="#">Story</a>
+            <button
+                class="border border-primary px-8 py-2.5 text-[10px] tracking-[0.2em] uppercase font-bold hover:bg-primary hover:text-white transition-all duration-300">
+                Sign Up
+            </button>
+        </div>
+    </header>
+    <main class="relative flex-1 flex items-center justify-center p-6 z-10">
+        <div class="w-full max-w-[480px] glass-card p-12 lg:p-16 border border-white/40">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-light text-primary mb-4 italic">Welcome Back</h1>
+                <p class="text-[11px] uppercase tracking-[0.3em] text-slate-500 font-medium">The Art of Organized Living
+                </p>
+            </div>
+            <form class="space-y-8">
+                <div class="flex flex-col gap-2">
+                    <label class="text-[10px] uppercase tracking-[0.2em] font-bold text-primary/60" for="email">Email
+                        Address</label>
+                    <input
+                        class="w-full bg-transparent border-0 border-b border-slate-300 px-0 py-3 focus:ring-0 focus:border-accent transition-colors placeholder:text-slate-300 text-sm font-light tracking-wide"
+                        id="email" placeholder="email@example.com" type="email" />
+                </div>
+                <div class="flex flex-col gap-2">
+                    <div class="flex justify-between items-center">
+                        <label class="text-[10px] uppercase tracking-[0.2em] font-bold text-primary/60"
+                            for="password">Password</label>
+                    </div>
+                    <div class="relative flex items-center">
+                        <input
+                            class="w-full bg-transparent border-0 border-b border-slate-300 px-0 py-3 pr-10 focus:ring-0 focus:border-accent transition-colors placeholder:text-slate-300 text-sm font-light tracking-wide"
+                            id="password" placeholder="••••••••" type="password" />
+                        <button class="absolute right-0 text-slate-400 hover:text-accent" type="button">
+                            <span class="material-symbols-outlined text-[18px]">visibility</span>
+                        </button>
+                    </div>
+                    <div class="flex justify-end mt-1">
+                        <a class="text-[10px] uppercase tracking-[0.1em] text-slate-400 hover:text-accent transition-colors"
+                            href="#">Forgot Credentials?</a>
+                    </div>
+                </div>
+                <div class="pt-4">
+                    <button (click)="goToTask('dashboard')"
+                        class="w-full py-4 bg-primary text-white text-[11px] uppercase tracking-[0.4em] font-bold hover:bg-[var(--accent)] transition-all duration-500 shadow-xl shadow-black/5">
+                        Enter Dashboard
+                    </button>
+                </div>
+                <div class="relative py-4">
+                    <div class="absolute inset-0 flex items-center">
+                        <div class="w-full border-t border-slate-200"></div>
+                    </div>
+                    <div class="relative flex justify-center text-[9px] uppercase tracking-[0.3em]">
+                        <span class="bg-white/50 px-4 text-slate-400">Alternative Access</span>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-6">
+                    <button
+                        class="flex items-center justify-center gap-3 py-3 border border-slate-200 hover:border-accent hover:bg-white/50 transition-all group"
+                        type="button">
+                        <img alt="" class="w-4 h-4 grayscale group-hover:grayscale-0 opacity-70"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjkrrR-IuCqtKgJvGfkzpYJpvYBkdOm5CrWNR4TxoN8Pcn6t9gvselpkid5XL8LY3w8JXH7b8G1KQWeJ8Ea2_2LWJxsC1AVKataat4G9-Lm0f6-Dc-ab-2pn3QWR4K4HQHAXxN5_f_K5n02l0UEGERRK1n8Zp2gtV14DOgxmon4xucgqRDj6z-SizmiZdRvP33j5jvIENa2vMeI_CqhwA51H_AihY3dRUXmBHRj5y5LF4mB6nhxcqvwN_4vEgl76B1AzIx2dBbugk" />
+                        <span class="text-[10px] uppercase tracking-[0.15em] font-medium">Google</span>
+                    </button>
+                    <button
+                        class="flex items-center justify-center gap-3 py-3 border border-slate-200 hover:border-accent hover:bg-white/50 transition-all group"
+                        type="button">
+                        <span
+                            class="material-symbols-outlined text-[18px] text-slate-400 group-hover:text-primary">account_circle</span>
+                        <span class="text-[10px] uppercase tracking-[0.15em] font-medium">GitHub</span>
+                    </button>
+                </div>
+            </form>
+            <div class="mt-12 text-center pt-8 border-t border-slate-100">
+                <p class="text-[11px] text-slate-500 tracking-wide">
+                    New to the collection?
+                    <a class="text-accent font-bold hover:text-primary transition-colors underline underline-offset-4 ml-1"
+                        routerLink="/signUp">Create Account</a>
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer class="relative w-full py-10 px-8 text-center z-10">
+        <div
+            class="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-12 text-[10px] uppercase tracking-[0.2em] text-slate-400 font-medium">
+            <p>© 2026 Taskora Archive</p>
+            <div class="flex gap-8">
+                <a class="hover:text-accent transition-colors" href="#">Privacy</a>
+                <a class="hover:text-accent transition-colors" href="#">Terms</a>
+                <a class="hover:text-accent transition-colors" href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+</div>
